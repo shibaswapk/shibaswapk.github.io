@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /cgi-bin
+Sitemap: https://shibaswapk.github.io/sitemap.xml
+
+
+

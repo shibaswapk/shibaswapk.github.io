@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "ShibSwap",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/shibaswap_1.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://shibaswapk.github.io/sitemap.xml\n\n\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://shibaswapk.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "htdoqksjcp",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "ShibaSwap™ | Home | Official Website",
+        "meta_descr": "Shibaswap is a platform where you can provide liquidity to earn BONE, the governance token of Shiba Inu, the meme coin based on Dogecoin. You can also buy, sell and trade …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/shibaswap-1200x675.jpg\" alt=\"Shibaswap\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZ9li1PV8D",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>ShibaSwap™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Shibaswap: Unleashing the Power of Decentralized Exchanges\n<br></b>\n<br><b>Introduction:\n<br></b>\n<br>In the rapidly evolving world of cryptocurrencies, decentralized finance (DeFi) has emerged as a groundbreaking movement, revolutionizing the way we think about traditional financial systems. At the forefront of this DeFi revolution is Shibaswap, a decentralized exchange built on the Ethereum blockchain and powered by the Shiba Inu (SHIB) ecosystem. In this article, we will explore the intricacies of Shibaswap, its unique features, and the impact it has on DeFi enthusiasts and the wider crypto community.\n<br>\n<br><b>Understanding Shibaswap:\n</b><br>a. The Basics: <a href=\"https://shibaswapk.github.io/\" class=\"text-primary\"><b>Shibaswap</b></a> is a decentralized exchange (DEX) that allows users to trade various cryptocurrencies directly from their digital wallets. It is designed to provide a seamless and secure trading experience without relying on intermediaries or centralized authorities. Shibaswap utilizes smart contracts to automate and execute trades, ensuring transparency, efficiency, and trustworthiness.\n<br>\n<br>b. The Shiba Inu Ecosystem: <a href=\"https://shibaswap.com/\" class=\"text-primary\"><b>Shibaswap</b></a> is an integral part of the broader Shiba Inu ecosystem, which includes SHIB, the native cryptocurrency, and other tokens such as LEASH and BONE. SHIB gained popularity as an Ethereum-based meme token inspired by the Dogecoin community. With Shibaswap, the Shiba Inu ecosystem aims to expand its offerings and provide a comprehensive DeFi experience.\n<br>\n<br><b>Key Features and Advantages of Shibaswap:\n</b><br>a. Liquidity Pools: Shibaswap operates on the concept of liquidity pools, where users can contribute their cryptocurrencies to the pool and earn rewards in return. Liquidity providers receive a portion of the transaction fees generated by the platform, incentivizing them to contribute to the liquidity and stability of the exchange. This mechanism ensures that Shibaswap has a robust liquidity base, allowing for seamless trading and minimizing slippage.\n<br>\n<br>b. Yield Farming: Shibaswap offers users the opportunity to engage in yield farming, a popular DeFi practice that involves staking or locking up cryptocurrencies to earn additional rewards. By participating in Shibaswap's yield farming, users can earn SHIB, LEASH, BONE, or other tokens by providing liquidity to specific pairs or pools. Yield farming provides an avenue for users to generate passive income while contributing to the overall liquidity and stability of the platform.\n<br>\n<br>c. Community Governance: One of the distinguishing features of Shibaswap is its emphasis on community governance. SHIB token holders have the power to propose and vote on changes and improvements to the platform. This democratic approach ensures that the community has a say in the evolution of Shibaswap, fostering a sense of ownership and empowering users to shape the future of the exchange.\n<br>\n<br>d. Security and Transparency: Shibaswap is built on the Ethereum blockchain, leveraging its robust security features and smart contract capabilities. All transactions and interactions on Shibaswap are transparent and recorded on the blockchain, ensuring transparency and accountability. However, it is essential to note that as with any DeFi platform, users should exercise caution and conduct due diligence before participating in any activities on Shibaswap.\n<br>\n<br><b>Impact and Potential of Shibaswap:\n</b><br>a. Democratizing Finance: Shibaswap and similar decentralized exchanges contribute to the democratization of finance by providing access to a wide range of financial services without the need for intermediaries or complex procedures. Users can seamlessly trade, earn rewards, and participate in the growth of the Shiba Inu ecosystem, regardless of their geographical location or financial background.\n<br>\n<br>b. Community Engagement and Incentives: Shibaswap's focus on community engagement and incentives creates a vibrant ecosystem where users actively participate and contribute to the platform's success. By rewarding liquidity providers and yield farmers, Shibaswap encourages users to actively engage with the exchange, which, in turn, strengthens liquidity, stability, and overall user experience.\n<br>\n<br>c. Driving Innovation in DeFi: As a decentralized exchange, Shibaswap represents the ongoing innovation and experimentation within the DeFi space. It showcases the potential of decentralized exchanges as alternatives to traditional centralized exchanges, providing users with greater control, privacy, and security over their assets. The success and adoption of Shibaswap inspire the development of new and innovative DeFi protocols and platforms.\n<br>\n<br>d. Addressing Challenges and Risks: Like any DeFi platform, Shibaswap is not without risks and challenges. Price volatility, smart contract vulnerabilities, and regulatory uncertainties are factors that users and investors should consider. It is crucial to conduct thorough research, understand the associated risks, and exercise caution while participating in activities on Shibaswap or any other DeFi platform.\n<br>\n<br><b>Conclusion:\n</b><br>\n<br>Shibaswap represents a significant milestone in the DeFi landscape, showcasing the power of decentralized exchanges and community-driven ecosystems. With its emphasis on liquidity pools, yield farming, and community governance, Shibaswap provides a unique user experience and empowers individuals to actively participate in the growth and success of the Shiba Inu ecosystem. As the DeFi movement continues to evolve, platforms like Shibaswap serve as catalysts for innovation, drivingthe adoption of decentralized financial services and reshaping the traditional financial landscape. However, it is important for users to carefully evaluate the risks associated with DeFi platforms, including price volatility and smart contract vulnerabilities. By understanding the features, advantages, and potential impact of Shibaswap, users can make informed decisions and actively participate in the exciting world of decentralized finance while keeping their assets secure.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZ9liOyEMS",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
